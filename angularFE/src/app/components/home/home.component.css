@@ -50,7 +50,7 @@
 }
 
 .dev-icon-img {
-  max-width: 320px;
+  max-width: 220px; /* RIPRISTINATO (da 240px a 220px) */
   height: auto;
 }
 

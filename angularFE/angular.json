@@ -1,2 +1,72 @@
-{\n  \"$schema\": \"./node_modules/@angular/cli/lib/config/schema.json\",\n  \"version\": 1,\n  \"newProjectRoot\": \"projects\",\n  \"projects\": {\n    \"angularFE\": {\n      \"projectType\": \"application\",\n      \"schematics\": {\n        \"@schematics/angular:component\": {\n          \"standalone\": false\n        },\n        \"@schematics/angular:directive\": {\n          \"standalone\": false\n        },\n        \"@schematics/angular:pipe\": {\n          \"standalone\": false\n        }\n      },\n      \"root\": \"\",\n      \"sourceRoot\": \"src\",\n      \"prefix\": \"app\",\n      \"architect\": {\n        \"build\": {\n          \"builder\": \"@angular-devkit/build-angular:application\",\n          \"options\": {\n            \"outputPath\": \"dist/angular-fe\",\n            \"index\": \"src/index.html\",\n            \"browser\": \"src/main.ts\",\n            \"polyfills\": [\n              \"zone.js\"\n            ],\n            \"tsConfig\": \"tsconfig.app.json\",\n            \"assets\": [\n              \"src/favicon.ico\",\n              // CORREZIONE: Specifica come oggetto per copiare tutti i file da src/assets a assets/ nella build\n              {\n                \"glob\": \"**/*\",\n                \"input\": \"src/assets\",\n                \"output\": \"assets\"\n              },\n              {\n                \"glob\": \"**/*\",\n                \"input\": \"public\"\n              }\n            ],\n            \"styles\": [\n              \"src/styles.css\"\n            ],\n            \"scripts\": []\n          },\n          \"configurations\": {\n            \"production\": {\n              \"budgets\": [\n                {\n                  \"type\": \"initial\",\n                  \"maximumWarning\": \"500kB\",\n                  \"maximumError\": \"1MB\"\n                },\n                {\n                  \"type\": \"anyComponentStyle\",\n                  \"maximumWarning\": \"5kB\",\n                  \"maximumError\": \"10kB\"\n                }\n              ],\n              \"outputHashing\": \"all\"\n            },\n            \"development\": {\n              \"optimization\": false,\n              \"extractLicenses\": false,\n              \"sourceMap\": true\n            }\n          },\n          \"defaultConfiguration\": \"production\"\n        },\n        \"serve\": {\n          \"builder\": \"@angular-devkit/build-angular:dev-server\",\n          \"configurations\": {\n            \"production\": {\n              \"buildTarget\": \"angularFE:build:production\"\n            },\n            \"development\": {\n              \"buildTarget\": \"angularFE:build:development\"\n            }\n          },\n          \"defaultConfiguration\": \"development\"\n        },\n        \"extract-i18n\": {\n          \"builder\": \"@angular-devkit/build-angular:extract-i18n\"\n        },\
-        \"test\": {\n          \"builder\": \"@angular-devkit/build-angular:karma\",\n          \"options\": {\n            \"polyfills\": [\n              \"zone.js\",\n              \"zone.js/testing\"\n            ],\n            \"tsConfig\": \"tsconfig.spec.json\",\n            \"assets\": [\n              {\n                \"glob\": \"**/*\",\n                \"input\": \"public\"\n              }\n            ],\n            \"styles\": [\n              \"src/styles.css\"\n            ],\n            \"scripts\": []\n          }\n        }\n      }\n    }\n  },\n  \"cli\": {\n    \"analytics\": false\n  }\n}\n
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "angularFE": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": { "standalone": false },
+        "@schematics/angular:directive": { "standalone": false },
+        "@schematics/angular:pipe": { "standalone": false }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/angular-fe",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              { "glob": "**/*", "input": "src/assets", "output": "assets" },
+              { "glob": "**/*", "input": "public" }
+            ],
+            "styles": ["src/styles.css"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                { "type": "initial", "maximumWarning": "500kB", "maximumError": "1MB" },
+                { "type": "anyComponentStyle", "maximumWarning": "5kB", "maximumError": "10kB" }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": { "buildTarget": "angularFE:build:production" },
+            "development": { "buildTarget": "angularFE:build:development" }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": { "builder": "@angular-devkit/build-angular:extract-i18n" },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": ["zone.js", "zone.js/testing"],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [{ "glob": "**/*", "input": "public" }],
+            "styles": ["src/styles.css"],
+            "scripts": []
+          }
+        }
+      }
+    }
+  },
+  "cli": { "analytics": false }
+}

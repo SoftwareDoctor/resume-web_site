@@ -1,8 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
-
 :host {
   display: block;
+  height: 100%;
+  overflow-y: auto; /* Permette lo scrolling verticale se le card sono troppe */
+  padding: 1rem 2rem;
+  box-sizing: border-box;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 
 :root {
   --background-color: #1a1a2e;
@@ -14,49 +18,32 @@
   --text-title: #ffffff;
 }
 
-/* Contenitore principale della timeline orizzontale */
+/* --- Contenitore principale della timeline orizzontale adattiva --- */
 .horizontal-timeline-container {
   font-family: "Poppins", sans-serif;
   background: var(--background-color);
   color: var(--text-primary);
-  overflow-x: auto; /* Abilita lo scrolling orizzontale */
-  white-space: nowrap; /* Impedisce alle card di andare a capo */
-  -webkit-overflow-scrolling: touch; /* Migliora lo scrolling su iOS */
-  scrollbar-width: thin; /* Stile per la scrollbar (Firefox) */
-  scrollbar-color: var(--secondary-accent) var(--card-color); /* Colore scrollbar (Firefox) */
-  padding: 2rem;
+  padding: 0; /* Rimosso padding qui, gestito da :host */
   box-sizing: border-box;
+  width: 100%; /* Occupa tutta la larghezza disponibile */
 }
 
-/* Stile della scrollbar per Webkit (Chrome, Safari) */
-.horizontal-timeline-container::-webkit-scrollbar {
-  height: 8px;
-}
-
-.horizontal-timeline-container::-webkit-scrollbar-track {
-  background: var(--card-color);
-  border-radius: 10px;
-}
-
-.horizontal-timeline-container::-webkit-scrollbar-thumb {
-  background-color: var(--secondary-accent);
-  border-radius: 10px;
-  border: 2px solid var(--card-color);
-}
-
-/* Lista delle card */
+/* Lista delle card - ora un flex container che va a capo */
 .timeline-list {
-  display: flex; /* Mette le card in riga */
+  display: flex;
+  flex-wrap: wrap; /* PERMETTE ALLE CARD DI ANDARE A CAPO */
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 2rem; /* Spazio tra le card */
+  gap: 1.5rem; /* Spazio tra le card, leggermente ridotto */
+  justify-content: center; /* Centra le card orizzontalmente */
+  align-items: stretch; /* Fa in modo che le card abbiano la stessa altezza */
 }
 
 /* Singola card */
 .timeline-list li {
-  flex: 0 0 auto; /* Impedisce alle card di restringersi */
-  width: 280px; /* Larghezza fissa per ogni card */
+  flex: 1 1 250px; /* Le card si adattano: minimo 250px, si espandono per riempire */
+  max-width: 300px; /* Larghezza massima per evitare che diventino troppo grandi */
   background: var(--card-color);
   border: 1px solid var(--primary-accent);
   border-radius: 12px;
@@ -67,6 +54,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .timeline-list li:hover {
@@ -85,10 +73,10 @@
   font-size: 1.1rem;
   font-weight: 700;
   color: white;
-  background-color: var(--accent-color); /* Usa il colore dinamico */
+  background-color: var(--accent-color);
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  align-self: flex-start; /* Allinea a sinistra */
+  align-self: flex-start;
   margin-bottom: 0.5rem;
 }
 
@@ -96,13 +84,45 @@
   font-size: 1.4rem;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 0.25rem;
+  word-break: break-word;
 }
 
 .timeline-content .descr {
   font-size: 0.9rem;
   color: #ffffff;
   line-height: 1.5;
+  word-break: break-word;
+}
+
+.description-full {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+  word-break: break-word;
+  margin-top: 1rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-tags .tag {
+  display: inline-block;
+  background-color: var(--primary-accent);
+  color: var(--text-secondary);
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.75em;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tech-tags .tag:hover {
+  background-color: var(--secondary-accent);
+  color: white;
 }
 
 /* Rimuovi stili non più necessari dalla versione verticale */
@@ -115,12 +135,17 @@
   display: none !important;
 }
 
-/* Media query per schermi più piccoli (se necessario, puoi adattare ulteriormente) */
+/* Rimuovi stili scrollbar orizzontale */
+.horizontal-timeline-container::-webkit-scrollbar,
+.horizontal-timeline-container::-webkit-scrollbar-track,
+.horizontal-timeline-container::-webkit-scrollbar-thumb {
+  display: none; /* Nasconde la scrollbar orizzontale */
+}
+
+/* Media query per schermi più piccoli */
 @media (max-width: 768px) {
-  .horizontal-timeline-container {
-    padding: 1rem;
-  }
   .timeline-list li {
-    width: 250px;
+    flex: 1 1 100%; /* Una sola card per riga su mobile */
+    max-width: 100%;
   }
 }

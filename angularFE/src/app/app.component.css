@@ -24,7 +24,7 @@
   flex: 0 0 auto;
   background-color: #16213e;
   color: #a0a0a0;
-  padding: 15px 40px; /* Aumentato un po' il padding per fare spazio */
+  padding: 15px 40px;
 }
 
 /* --- NUOVI STILI PER IL FOOTER --- */
@@ -33,7 +33,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  flex-wrap: wrap; /* Permette di andare a capo su schermi piccoli */
+  flex-wrap: wrap;
   gap: 15px;
 }
 

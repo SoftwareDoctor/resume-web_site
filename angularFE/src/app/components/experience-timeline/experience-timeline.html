@@ -1,20 +1,16 @@
 <div class="horizontal-timeline-container">
   <!-- Lista che contiene le card della timeline -->
   <ul class="timeline-list">
-
-    <!--
-      Cicliamo sulle esperienze. Ad ogni card viene assegnato un colore diverso
-      grazie alla logica nel file .ts e al binding [style.--accent-color].
-    -->
     <li *ngFor="let exp of experiences(); let i = index" [style.--accent-color]="colors[i % colors.length]">
-
       <!-- Il contenuto della card -->
       <div class="timeline-content">
         <div class="date">{{ exp.period }}</div>
         <div class="title">{{ exp.role }}</div>
         <div class="descr">{{ exp.company }}</div>
+<!--        <div class="tech-tags"> &lt;!&ndash; RIPRISTINATO &ndash;&gt;-->
+<!--          <span *ngFor="let tech of exp.technologies" class="tag">{{ tech }}</span>-->
+<!--        </div>-->
       </div>
-
     </li>
   </ul>
 </div>
