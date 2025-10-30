@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4d328822-2d79-404e-ba9e-dc7d85b73339" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularFE" beforeDir="false" afterPath="$PROJECT_DIR$/angularFE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularFE/.angular/cache/18.1.0/angularFE/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/angularFE/.angular/cache/18.1.0/angularFE/.tsbuildinfo" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodyActiveAccount">
+    <option name="activeAccountId" value="VXNlcjo0MzI3ODI=" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SoftwareDoctor&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SoftwareDoctor/angularproject.git&quot;,
+    &quot;accountId&quot;: &quot;4567b492-d0a1-49f7-aec5-ae67b55ce95b&quot;
+  }
+}</component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2jHi0pb7FDkwhJoF0rDrM5Bv2kx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AngularprojectApplication.executor": "Run",
+    "Docker.angularprojectBE/docker-compose.yaml: Compose Deployment.executor": "Run",
+    "Maven.angularprojectBE [clean,install].executor": "Run",
+    "Maven.angularprojectBE [clean].executor": "Run",
+    "Maven.angularprojectBE [install].executor": "Run",
+    "RunOnceActivity.CodyAccountHistoryMigration": "true",
+    "RunOnceActivity.CodyConvertUrlToCodebaseName": "true",
+    "RunOnceActivity.CodyHistoryLlmMigration": "true",
+    "RunOnceActivity.CodyProjectSettingsMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "com.google.cloudcode.ide_session_index": "20240730_0002",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/andrea.italiano/Desktop/progetti/Angular_Project",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  },
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andrea.italiano\Desktop\Angular_Project\angularFE\src\app\components" />
+      <recent name="C:\Users\andrea.italiano\Desktop\Angular_Project\angularFE\src\app\models" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.angularprojectBE/docker-compose.yaml: Compose Deployment">
+    <configuration name="AngularprojectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.softwaredoctor.angularproject.AngularprojectApplication" />
+      <module name="angularprojectBE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.softwaredoctor.angularproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="angularprojectBE/docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="angularprojectBE/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.angularprojectBE/docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Application.AngularprojectApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\andrea.italiano\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d328822-2d79-404e-ba9e-dc7d85b73339" name="Changes" comment="" />
+      <created>1721050182409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721050182409</updated>
+    </task>
+    <task id="LOCAL-00001" summary="commit angular">
+      <option name="closed" value="true" />
+      <created>1721221521446</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721221521446</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit angular new">
+      <option name="closed" value="true" />
+      <created>1721288119617</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721288119617</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit angular new">
+      <option name="closed" value="true" />
+      <created>1721288188348</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721288188348</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit angular new2">
+      <option name="closed" value="true" />
+      <created>1721656988843</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721656988843</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit angular new3">
+      <option name="closed" value="true" />
+      <created>1721657136751</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721657136751</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit angular new4">
+      <option name="closed" value="true" />
+      <created>1721801419515</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721801419515</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit angular new5">
+      <option name="closed" value="true" />
+      <created>1721801452250</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721801452250</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit angular new6">
+      <option name="closed" value="true" />
+      <created>1721801579277</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721801579277</updated>
+    </task>
+    <task id="LOCAL-00009" summary="commit angular new7">
+      <option name="closed" value="true" />
+      <created>1721801618528</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721801618528</updated>
+    </task>
+    <task id="LOCAL-00010" summary="commit angular new8">
+      <option name="closed" value="true" />
+      <created>1722320244246</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722320244246</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit angular new9 video">
+      <option name="closed" value="true" />
+      <created>1722321124330</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722321124330</updated>
+    </task>
+    <task id="LOCAL-00012" summary="commit angular FE">
+      <option name="closed" value="true" />
+      <created>1722324601794</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1722324601794</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update fe &amp; be">
+      <option name="closed" value="true" />
+      <created>1761310162336</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1761310162336</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update fe &amp; be">
+      <option name="closed" value="true" />
+      <created>1761310205446</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1761310205446</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update fe &amp; be">
+      <option name="closed" value="true" />
+      <created>1761310328925</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1761310328925</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update fe &amp; be">
+      <option name="closed" value="true" />
+      <created>1761310390470</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1761310390470</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update fe &amp; be">
+      <option name="closed" value="true" />
+      <created>1761311345605</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1761311345605</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update fe &amp; be">
+      <option name="closed" value="true" />
+      <created>1761312225476</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1761312225476</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ts" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="0e8c3b7d-6da0-42bb-9c1d-bd541f79cd55" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="0e8c3b7d-6da0-42bb-9c1d-bd541f79cd55">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/angularprojectBE" />
+      <path value="$PROJECT_DIR$/angularproject" />
+      <path value="$PROJECT_DIR$/angularFE" />
+      <path value="$PROJECT_DIR$/angularFE/angular_java_project" />
+    </ignored-roots>
+    <MESSAGE value="commit angular" />
+    <MESSAGE value="commit angular new" />
+    <MESSAGE value="commit angular new2" />
+    <MESSAGE value="commit angular new3" />
+    <MESSAGE value="commit angular new4" />
+    <MESSAGE value="commit angular new5" />
+    <MESSAGE value="commit angular new6" />
+    <MESSAGE value="commit angular new7" />
+    <MESSAGE value="commit angular new8" />
+    <MESSAGE value="commit angular new9 video" />
+    <MESSAGE value="commit angular FE" />
+    <MESSAGE value="update fe &amp; be" />
+    <option name="LAST_COMMIT_MESSAGE" value="update fe &amp; be" />
+  </component>
+</project>

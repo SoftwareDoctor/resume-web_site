@@ -1,0 +1,66 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section {
+  flex: 0 0 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.intro-text h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.intro-text h2 {
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #e94560;
+  margin: 5px 0;
+}
+
+.intro-text p {
+  display: block;
+  font-size: 1em;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 10px auto 0 auto;
+  color: #ffffff;
+}
+
+.dev-image-container {
+  margin-top: 15px;
+}
+
+.dev-icon-img {
+  max-width: 320px;
+  height: auto;
+}
+
+.section-divider {
+  display: none;
+}
+
+app-experience-timeline {
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}

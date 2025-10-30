@@ -1,0 +1,37 @@
+<header class="app-header">
+  <nav>
+    <!-- Logo cliccabile che riporta alla home -->
+    <a routerLink="/home" class="logo-link">
+      <img src="https://i.postimg.cc/v4DfP95F/Andrea-Italiano.png" alt="Logo Andrea Italiano" class="logo-img">
+    </a>
+
+    <!-- Menu di navigazione spostato a destra -->
+    <ul class="nav-links">
+      <li>
+        <a href="assets/Andrea_Italiano_CV.pdf" download="Andrea_Italiano_CV.pdf" target="_blank">Resume</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="app-main-content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="app-footer">
+  <div class="footer-content">
+    <p class="copyright">© 2025 Software Doctor</p>
+    <div class="contact-info">
+      <span>Email: andrea.italiano@example.com</span>
+      <span>Telefono: +39 333 1234567</span>
+    </div>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/andreaitaliano" target="_blank" aria-label="LinkedIn">
+        <i class="icon-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/andreaitaliano" target="_blank" aria-label="GitHub">
+        <i class="icon-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+:host {
+  display: block;
+}
+
+:root {
+  --background-color: #1a1a2e;
+  --card-color: #16213e;
+  --primary-accent: #0f3460;
+  --secondary-accent: #e94560;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --text-title: #ffffff;
+}
+
+/* Contenitore principale della timeline orizzontale */
+.horizontal-timeline-container {
+  font-family: "Poppins", sans-serif;
+  background: var(--background-color);
+  color: var(--text-primary);
+  overflow-x: auto; /* Abilita lo scrolling orizzontale */
+  white-space: nowrap; /* Impedisce alle card di andare a capo */
+  -webkit-overflow-scrolling: touch; /* Migliora lo scrolling su iOS */
+  scrollbar-width: thin; /* Stile per la scrollbar (Firefox) */
+  scrollbar-color: var(--secondary-accent) var(--card-color); /* Colore scrollbar (Firefox) */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Stile della scrollbar per Webkit (Chrome, Safari) */
+.horizontal-timeline-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-timeline-container::-webkit-scrollbar-track {
+  background: var(--card-color);
+  border-radius: 10px;
+}
+
+.horizontal-timeline-container::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-accent);
+  border-radius: 10px;
+  border: 2px solid var(--card-color);
+}
+
+/* Lista delle card */
+.timeline-list {
+  display: flex; /* Mette le card in riga */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 2rem; /* Spazio tra le card */
+}
+
+/* Singola card */
+.timeline-list li {
+  flex: 0 0 auto; /* Impedisce alle card di restringersi */
+  width: 280px; /* Larghezza fissa per ogni card */
+  background: var(--card-color);
+  border: 1px solid var(--primary-accent);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.timeline-list li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(233, 69, 96, 0.2);
+}
+
+/* Contenuto della card */
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timeline-content .date {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  background-color: var(--accent-color); /* Usa il colore dinamico */
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  align-self: flex-start; /* Allinea a sinistra */
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content .title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-content .descr {
+  font-size: 0.9rem;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+/* Rimuovi stili non più necessari dalla versione verticale */
+.timeline::after,
+.timeline-item:nth-child(odd),
+.timeline-item:nth-child(even),
+.timeline-item .timeline-content::before,
+.timeline-icon
+{
+  display: none !important;
+}
+
+/* Media query per schermi più piccoli (se necessario, puoi adattare ulteriormente) */
+@media (max-width: 768px) {
+  .horizontal-timeline-container {
+    padding: 1rem;
+  }
+  .timeline-list li {
+    width: 250px;
+  }
+}
