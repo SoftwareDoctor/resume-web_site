@@ -1,12 +1,11 @@
 :host {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh; /* Usa min-height per consentire la crescita se il contenuto è più grande */
 }
 
 .app-header {
-  flex: 0 0 auto;
+  flex-shrink: 0; /* Impedisce al header di restringersi */
   background-color: #16213e;
   padding: 5px 40px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -14,14 +13,16 @@
 }
 
 .app-main-content {
-  flex: 1 1 auto;
-  overflow: hidden;
+  flex-grow: 1; /* Permette al contenuto principale di espandersi */
   background-color: #1a1a2e;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Allinea le cards in basso, sopra il footer */
+  overflow: hidden; /* ✅ Impedisce lo scroll del contenitore */
 }
 
 .app-footer {
-  flex: 0 0 auto;
+  flex-shrink: 0; /* Impedisce al footer di restringersi */
   background-color: #16213e;
   color: #a0a0a0;
   padding: 15px 40px;
